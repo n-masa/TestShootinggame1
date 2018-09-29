@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour {
 
+	public int speed; //速度
+
 	// Use this for initialization
 	void Start () {
 		

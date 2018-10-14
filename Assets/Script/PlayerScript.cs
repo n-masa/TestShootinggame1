@@ -8,9 +8,11 @@ public class PlayerScript : MonoBehaviour {
 	public float maxspeed; //速度
 	public float lowspeed; //低速移動速度
 
+	public GameObject bulletobject; //弾
+
 	// Use this for initialization
 	void Start () {
-		
+		StartCoroutine("Shot");
 	}
 	
 	// Update is called once per frame
@@ -31,5 +33,15 @@ public class PlayerScript : MonoBehaviour {
 			MoveSpeed = maxspeed;
 		}
 		GetComponent<Rigidbody2D>().velocity = Dir * MoveSpeed;
+	}
+
+	IEnumerator Shot()
+	{
+		while(true){
+			if(Input.GetKey(KeyCode.Z)){
+				Instantiate(bulletobject, transform.position, transform.rotation);	
+			}
+			yield return new WaitForSeconds(0.05f);
+		}
 	}
 }

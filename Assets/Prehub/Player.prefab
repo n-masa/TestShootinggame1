@@ -75,6 +75,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxspeed: 4
   lowspeed: 2
+  bulletobject: {fileID: 1194912931650400, guid: f8ab443f9b3bc82439dd86c4eea0884c,
+    type: 2}
 --- !u!212 &212177668410650306
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -107,8 +109,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -985562035
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 4f3d817ad821bc345b488255f0de8318, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

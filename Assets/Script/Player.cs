@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class PlayerScript : MonoBehaviour {
+public class Player : MonoBehaviour {
 
 	public float maxspeed; //速度
 	public float lowspeed; //低速移動速度
